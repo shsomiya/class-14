@@ -1,0 +1,245 @@
+.header{
+    width: 100%;
+    background-color: white;
+}
+ .manu ul{
+    text-align: center;
+    
+}
+li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+ .menu {
+    text-decoration: none;
+    background-color:#48dbfb;
+    color: black;
+    padding:0px 10px ;
+    height: 30px !important;
+    display: inline-block;
+    line-height: 30px;
+
+}
+ .menu::before{
+    content: "";
+    height:2px;
+    width: 0%;
+    background-color: #000000;
+    color: #48dbfb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+   
+}
+ .menu:hover:before{
+    width: 100%;
+
+}
+
+.manu li:hover .menu{
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+    color: aqua;
+}
+
+
+/* time */
+.time{
+    width: 100%;
+    background-color:#48dbfb;
+    text-align: center;
+    height:300px ;
+    color: white;
+    padding:100px 30px ;
+    margin-top:-10px ;
+}
+.button{
+    text-align: center;
+}
+.btn{
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(179, 179, 160);
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    padding:10px 30px ;
+}
+.btn::before{
+    content: "\f544";
+    font-family:"Font Awesome 5 free";
+    font-weight:600 ;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all .3s;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
+
+/* banner */
+    .banner{
+        width:100% ;
+        height:auto ;
+        text-align: center;
+        margin-top:50px ;
+
+    }
+    .img{
+        width:1140px ;
+        height:auto ;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .img img{
+        width: 23% !important;
+        height: 250px !important;
+        object-fit: cover;
+        margin-right: 15px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        overflow: hidden !important;
+    }
+
+    .one{
+        transform: rotate(0);
+    }
+    .one:hover{
+        transform: rotate(360deg);
+        transition: all .5s  ;
+    }
+
+    .two{
+        transform:rotate(0) scale(1);
+    }
+    .two:hover{
+        transform:rotate(10deg) scale(1.1);
+        transition: all .5s  ;   
+    }
+    .three{
+        transform: rotate(0);
+    }
+    .three:hover{
+        transform:rotate(-10deg) scale(1.1);
+        transition: all .5s  ;
+    }
+    .four{
+        transform: rotate(0);
+    }
+    .four:hover{
+        transform:rotate(-20deg) scale(1.2);
+        transition: all .5s  ;
+    }
+    .five{
+        transform: rotate(0);
+    }
+    .five:hover{
+        transform: rotate(10deg) scale(1.1);
+        transition: all .5s  ;
+    }
+    .six{
+        transform: rotate(0);
+    }
+    .six:hover{
+        transform: rotate(340deg);
+        transition: all .5s  ;
+    }
+    .seven{
+        transform: rotate(0);
+    }
+    .seven:hover{
+        transform:scale(1.1);
+        transition: all .2s  ;
+    }
+    .eight{
+        transform: rotate(0);
+    }
+    .eight:hover{
+        transform:scale(.9);
+        transition: all .1s  ;
+    }
+
+    /* app */
+        .app{
+            width:100% ;
+            height:250px;
+            padding: 50px 0px;
+            position: relative;
+        }
+        h4,p{
+            text-align: center;
+        }
+        .s{
+            text-decoration:none;
+            background-color: black;
+            color: white;
+            padding:5px 10px ;
+            text-align: left;
+            position: absolute;
+            top:180px;
+            left: 200px;
+            transform: rotate(-40deg);
+        }
+        .s:hover{
+            transform: rotate(0deg);
+            background-color: #48dbfb;
+            color: #000000;
+        }
+        .t{
+            text-decoration:none;
+            background-color: black;
+            color: white;
+            padding:5px 10px ;
+            text-align: center;
+            position: absolute;
+            top:180px;
+            left: 500px;
+            transform: scale(1);
+        }
+        .t:hover{
+            transform: scale(1.1);
+            background-color: #48dbfb;
+            color: #000000;
+        }
+        .e{
+            text-decoration:none;
+            background-color: black;
+            color: white;
+            padding:5px 10px ;
+            text-align: right;
+            position: absolute;
+            top:180px;
+            left: 800px;
+            transform: rotate(40deg);
+        }
+        .e:hover{
+            transform: rotate(0deg);
+            background-color: #48dbfb;
+            color: #000000;
+        }
+        
+        /* footer */
+        .footer{
+            background-color:#2e2f31 ;
+            color: white;
+            text-align: center;
+            padding:10px 20px ;
+        }
+        /* img hover */
+
+       
+        
